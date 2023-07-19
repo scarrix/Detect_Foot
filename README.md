@@ -1,28 +1,21 @@
 # Detect_Foot
- "detectfoot_bothCamera" è un software utilizzato per rilevare i piedi dei robot NAO, in immagini scattate durante la competizione RoboCup SPL. Le immagini fornite sono frame di video registrati durante le partite di calcio, sia dalla upper camera sia dalla lower camera. 
+detectfoot_bothCamera è un software utilizzato per rilevare i piedi dei robot NAO, in immagini scattate durante la competizione RoboCup SPL. Le immagini fornite dai dataset sono frame di video registrati durante le partite di calcio, sia dalla upper camera sia dalla lower camera. 
 
-### Prerequisites
+## Prerequisiti
+E' necessario aver installato e settato correttamente OpenCV 4.3 per eseguire l'applicazione
 
-You need to have OpenCV 4.3 installed to compile and run the code
-
-### Build the code
-
+## Compile & Build
+Per compilare il sorgente usiamo il CMakeLists, appositamente creato, mediante Visual Studio. Creiamo i file di build, in una cartella appositamente creata, aprendo il terminale, posizionandoci nella radice del progetto e scrivendo il comando
 ```
 mkdir build
 cd build && cmake ..
 make
 ```
+Successivamente generiamo l'eseguibile compilando con Visual Studio.
 
-### Run the code
-
+##Esecuzione codice
+Il comando di esecuzione del software
 ```
-detectball test
+detectfoot.exe path\to\test
 ```
-
-where test is a folder containing images.
-
-### Examples
-
-![detectball-examples](./images/detectball-examples.png)
-
-Please, report bugs to domenico.bloisi@gmail.com
+esegue il detection dei piedi dei robot NAO sulle immagini presenti nella cartella test. Nel momento in cui riconosce una caratteristica nota (il piede di un robot NAO) il software circoscrive la zona rilevata mettendola in evidenza.
