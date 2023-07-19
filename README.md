@@ -13,7 +13,7 @@ make
 ```
 Successivamente generiamo l'eseguibile compilando con Visual Studio.
 
-##Esecuzione codice
+## Esecuzione codice
 Il comando di esecuzione del software
 ```
 detectfoot.exe path\to\test
