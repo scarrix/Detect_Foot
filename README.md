@@ -5,7 +5,7 @@ detectfoot_bothCamera è un software utilizzato per rilevare i piedi dei robot N
 E' necessario aver installato e settato correttamente OpenCV 4.3 per eseguire l'applicazione.
 
 ## Compile & Build
-Per compilare il sorgente usiamo il CMakeLists, appositamente creato, mediante Visual Studio. Creiamo i file di build in una cartella appositamente creata, aprendo il terminale, posizionandoci nella radice del progetto e scrivendo il comando
+Per compilare il sorgente usiamo il CMakeLists, mediante Visual Studio. Creiamo i file di build in una cartella appositamente creata, aprendo il terminale, posizionandoci nella radice del progetto e scrivendo il comando
 ```
 mkdir build
 cd build && cmake ..
