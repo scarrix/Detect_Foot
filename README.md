@@ -18,4 +18,4 @@ Il comando di esecuzione del software
 ```
 detectfoot.exe path\to\test
 ```
-esegue il detection dei piedi dei robot NAO sulle 63 immagini presenti nella cartella test. Nel momento in cui riconosce una caratteristica nota (il piede di un robot NAO) il software circoscrive la zona rilevata mettendola in evidenza. Le dimensioni delle finestre che seguono il detection dipendono dai parametri settati nel metodo detectMultiScale(<parametri>) di detectfoot_bothCamera.
+esegue il detection dei piedi dei robot NAO sulle 63 immagini presenti nella cartella test. Nel momento in cui riconosce una caratteristica nota (il piede di un robot NAO) il software circoscrive la zona rilevata mettendola in evidenza. Le dimensioni delle finestre che eseguono il detection dipendono dai parametri settati nel metodo detectMultiScale(<parametri>) di detectfoot_bothCamera.
